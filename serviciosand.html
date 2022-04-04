@@ -68,8 +68,8 @@
                                     data-bs-target="#interoperabilidadAnalisisModal">
                                     Analisis
                                 </button>
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModalCenter" onclick="init();">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#interoperabilidadEjecucionModal">
                                     Ejecución
                                 </button>
                             </div>
@@ -127,7 +127,22 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <iframe class="responsive-iframe" src="Interoperabilidad/interoperabilidad.html"></iframe>
+                        <iframe class="responsive-iframe" src="Interoperabilidad/Analisis/interoperabilidad.html"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
+        <!-- Modal -->
+        <div class="modal " id="interoperabilidadEjecucionModal" tabindex="-1"
+            aria-labelledby="interoperabilidadEjecucionModal" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <iframe class="responsive-iframe" src="Interoperabilidad/Ejecucion/interoperabilidad_Ejecucion.html"></iframe>
 
                     </div>
                 </div>
