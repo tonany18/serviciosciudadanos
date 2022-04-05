@@ -13,7 +13,7 @@
 
 <body>
     <header class="main-header">
-        <a href="#" class="header-logo ajax"><img src="images/and.png" alt=""></a>
+        <a href="index.html" class="header-logo ajax"><img src="images/and.png" alt=""></a>
         <div class="header-contacts">
             <ul>
                 <li><a href="#">info@and.gov.co</a></li>
@@ -41,12 +41,13 @@
                                     modo
                                     seguro y
                                     confiable a los servicios.</p>
+                                    <br/><br/>
                                 <button type="button" class="btn btn-success" data-bs-toggle="modal"
                                     data-bs-target="#autenticacionAnalisisModal">
                                     Analisis
                                 </button>
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModalCenter" onclick="init();">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#autenticacionEjecucionModal">
                                     Ejecución
                                 </button>
                             </div>
@@ -63,7 +64,7 @@
                                     con el
                                     propósito de facilitar servicios en línea a los ciudadanos, empresas y otras
                                     entidades mediante
-                                    el intercambio de datos entre sus sistemas de información.</p>
+                                    el intercambio de datos entre sus sistemas de información.</p>                                    
                                 <button type="button" class="btn btn-success" data-bs-toggle="modal"
                                     data-bs-target="#interoperabilidadAnalisisModal">
                                     Analisis
@@ -87,12 +88,13 @@
                                     que
                                     tienen o
                                     custodian las entidades.</p>
+                                    <br/>
                                 <button type="button" class="btn btn-success" data-bs-toggle="modal"
                                     data-bs-target="#carpetaAnalisisModal">
                                     Analisis
                                 </button>
-                                <button type="button" class="btn btn-primary" data-toggle="modal"
-                                    data-target="#exampleModalCenter" onclick="init();">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#carpetaAadEjecucionModal">
                                     Ejecución
                                 </button>
                             </div>
@@ -112,13 +114,27 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <iframe class="responsive-iframe" src="Autenticacion/autenticación.html"></iframe>
+                        <iframe class="responsive-iframe" src="Autenticacion/Analisis/autenticación.html"></iframe>
 
                     </div>
                 </div>
             </div>
         </div>
         <!-- Modal -->
+         <!-- Modal -->
+         <div class="modal " id="autenticacionEjecucionModal" tabindex="-1"
+         aria-labelledby="autenticacionEjecucionModal" aria-hidden="true">
+         <div class="modal-dialog modal-fullscreen">
+             <div class="modal-content">
+                 <div class="modal-body">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                     <iframe class="responsive-iframe" src="Autenticacion/Ejecucion/autenticacion_ejecucion.html"></iframe>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- Modal -->
 
         <!-- Modal -->
         <div class="modal " id="interoperabilidadAnalisisModal" tabindex="-1"
@@ -157,13 +173,28 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <iframe class="responsive-iframe" src="Carpeta_ciudadana/carpeta.html"></iframe>
+                        <iframe class="responsive-iframe" src="Carpeta_ciudadana/Analisis/carpeta.html"></iframe>
 
                     </div>
                 </div>
             </div>
         </div>
         <!-- Modal -->
+
+         <!-- Modal -->
+         <div class="modal " id="carpetaAadEjecucionModal" tabindex="-1"
+         aria-labelledby="carpetaAadEjecucionModal" aria-hidden="true">
+         <div class="modal-dialog modal-fullscreen">
+             <div class="modal-content">
+                 <div class="modal-body">
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                     <iframe class="responsive-iframe" src="Carpeta_ciudadana/ejecucion/carpeta_ejecucion.html"></iframe>
+
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- Modal -->
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
