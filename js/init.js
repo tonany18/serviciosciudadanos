@@ -627,7 +627,7 @@ function iknow_tm_owl_carousel(){
 	carousel.owlCarousel({
 		loop: true,
 		items: 2,
-		lazyLoad: false,
+		lazyLoad: true,
 		margin: 25,
 		autoplay: true,
 		autoplayTimeout: 7000,
